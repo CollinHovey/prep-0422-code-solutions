@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>CSS Layout Classes</title>
+  <link rel="stylesheet" href="reset.css">
+  <style>
+    /* stylelint-disable block-no-empty */
+    img {
+      width: 350px;
+      height: 500px;
+    }
+    body {
+      font-family: sans-serif;
+    }
+
+    h1 {
+      text-align: center;
+    }
+    p {
+      text-align: left;
+    }
+
+    .container {
+      max-width: 992px;
+      margin: auto;
+    }
+
+    .row {
+      width: 100%;
+      display: flex;
+    }
+
+    .column {
+      flex-basis: calc(100% / 3);
+      padding-left: 8px;
+      padding-right: 8px;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>JOHN WICK</h1>
+    <div class="row">
+      <div class="column">
+        <img src="https://m.media-amazon.com/images/I/81F5PF9oHhL._AC_SL1500_.jpg" alt="John Wick 1 Poster">
+        <h1>
+          John Wick
+        </h1>
+        <p>
+          A man who had left a life of violence is suddenly thrust back into the mess after an entitled mobster takes his only
+            peace away
+        </p>
+      </div>
+      <div class="column">
+        <img src="https://m.media-amazon.com/images/M/MV5BMjE2NDkxNTY2M15BMl5BanBnXkFtZTgwMDc2NzE0MTI@._V1_.jpg"
+            alt="John Wick 2 Poster">
+        <h1>
+          John Wick Chapter 2
+        </h1>
+        <p>
+          When an old promise catches up to him, John is begrungly forced to get back to work
+        </p>
+      </div>
+      <div class="column">
+        <img src="https://image.tmdb.org/t/p/original/jeNTqOnux7KSulznSh4UdiDlfmV.jpg" alt="John Wick 3 Poster">
+        <h1>
+          John Wick Chapter 3
+        </h1>
+        <p>
+          After commiting one of the worst crimes in the underground world, John Wick is targeted by a contract which brings
+            all
+            the worst assasins to his door
+        </p>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- Complete the HTML here -->
+
+</body>
+</html>
